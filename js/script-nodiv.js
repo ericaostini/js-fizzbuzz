@@ -1,0 +1,28 @@
+const wrapper = document.getElementById("wrapper");
+const container = document.createElement("div");
+container.className = `container d-flex flex-wrap justify-content-center p-6`;
+wrapper.append(container);
+
+for(let i = 1; i <= 100; i++){
+    console.log(i);
+    if (i % 3 === 0 && i % 5 !== 0){
+        boxCol = "fizz";
+        text = "fizz";
+    } else if (i % 5 === 0 && i % 3 !== 0){
+        boxCol = "buzz";
+        text = "buzz";
+    } else if(i % 3 === 0 && i % 5 === 0){
+        boxCol = "fizzBuzz";
+        text = "fizzBuzz";
+    } else {
+        boxCol = "null";
+        text = i;
+    }
+    const box = document.createElement("div");
+    box.className = `square ${boxCol} d-flex align-items-center justify-content-center m-4`;
+    box.innerHTML = `
+    <p> ${text} </p>
+    `;
+    container.append(box);
+    console.log(box);
+}
