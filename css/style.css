@@ -19,7 +19,6 @@ body{
     width: 100px;
     height: 100px;
     margin: 50px auto;
-    border: 1px solid black;
 }
 .null{
     background-color:  rgba(20, 139, 166, 1);

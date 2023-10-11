@@ -2,9 +2,9 @@ const wrapper = document.getElementById("wrapper");
 const container = document.getElementById("container");
 for(let i = 1; i <= 100; i++){
     console.log(i);
-    if (i % 3 === 0){
+    if (i % 3 === 0 && i % 5 !== 0){
         boxCol = "fizz";
-    } else if (i % 5 === 0){
+    } else if (i % 5 === 0 && i % 3 !== 0){
         boxCol = "buzz";
     } else if(i % 3 === 0 && i % 5 === 0){
         boxCol = "fizzBuzz";
@@ -12,7 +12,7 @@ for(let i = 1; i <= 100; i++){
         boxCol = "null";
     }
     const box = document.createElement("div");
-    box.className = `square ${boxCol}`
+    box.className = `square ${boxCol}`;
     container.append(box);
     console.log(box);
 }
