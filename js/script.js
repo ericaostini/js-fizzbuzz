@@ -11,4 +11,11 @@ for(let i = 1; i <= 100; i++){
     } else{
         boxColor = "null";
     }
+    const box = document.createElement("div");
+    console.log(box);
+    box.innerHTML = `square ${boxColor}`;
 }
+
+
+
+
