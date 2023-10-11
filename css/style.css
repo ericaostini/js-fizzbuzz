@@ -16,8 +16,9 @@ body{
     background-color:rgba(7, 53, 64, 1);
 }
 .square{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
     border: 1px solid black;
 }
 .null{
