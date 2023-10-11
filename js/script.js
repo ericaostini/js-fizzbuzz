@@ -16,7 +16,7 @@ for(let i = 1; i <= 100; i++){
         text = i;
     }
     const box = document.createElement("div");
-    box.className = `square ${boxCol} d-flex align-content-center justify-content-center`;
+    box.className = `square ${boxCol} d-flex align-items-center justify-content-center`;
     box.innerHTML = `
     <p> ${text} </p>
     `;
