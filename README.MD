@@ -10,3 +10,7 @@ ______
 
 ### For
 Utilizzo ciclo for di javascript per generare i 100 quadratini da assegnare alle giuste condizioni
+
+### 2 file java script
+Il file js script.js contiene ciclo for con aggiunta del solo div box, mentre div container è inserito nel codice html.
+Il file js script-nodiv.js contiene per prima cosa append() div continer a id = "wrapper" e successivamente ciclo for con inserimento div box nel div continer (come file script.js).
